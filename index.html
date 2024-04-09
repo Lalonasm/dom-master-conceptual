@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="logo-container">
+            <img style="border-radius: 5rem; border: 5px solid slategray;" width="150" height="120"
+                src="Images/worldlogo.jpg" alt="">
+        </div>
+
+        <div class="nav-cart">
+            <h1 id="cart-count"><sup>o</sup></h1>
+            <img style="border-radius: 2rem; border: 5px solid slateblue;" width="100" height="70" src="Images/cart.jpg"
+                alt="">
+            Home
+        </div>
+        <div>
+            Setting
+        </div>
+        <div><img style="border-radius: 5rem; border: 5px solid slateblue;" width="200" height="150"
+                src="Images/HEAD.jpg" alt=""></div>
+
+    </nav>
+    <main>
+        <section class="profile">
+            <div>
+                <h1>Lets Travel</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, magnam consectetur assumenda autem
+                    reprehenderit, in aliquam similique, est natus molestiae rem vel harum. Aperiam doloribus adipisci
+                    odio impedit atque amet aut, neque molestiae earum veritatis rerum, fuga illum consectetur maxime
+                    vero perspiciatis, ab iste nihil sapiente? Consequuntur, enim? Non, deleniti.</p>
+                <h2>Total budgetS: <span id="budget">900</span>$</h2>
+            </div>
+            <div style="border: 3px solid rosybrown; border-radius: 10px;">
+                <img width="700" height="400" src="Images/banner.jpg" alt="">
+            </div>
+        </section>
+        <section class="cart-section">
+            <div class="cart">
+                <div class="cart-1">
+                    <img width="250" height="150" src="Images/Group 40089.png" alt="">
+                    <div>
+                        <h2>Shajek</h2>
+                        <p>Carts:<span class="cost">500</span> $ </p>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="cart-2">
+                    <img width="250" height="150" src="Images/dhaka.jpg" alt="">
+                    <div>
+                        <h2>Dhaka</h2>
+                        <p>Carts:<span class="cost">200</span> $ </p>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="cart-3">
+                    <img width="250" height="150" src="Images/Rectangle 5.png" alt="">
+                    <div>
+                        <h2>Khulna</h2>
+                        <p>Carts:<span class="cost">400</span> $ </p>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="cart-4">
+                    <img width="250" height="150" src="Images/Group 39.png" alt="">
+                    <div>
+                        <h2>Coxs Bazar</h2>
+                        <p>Carts: <span class="cost">600</span> $ </p>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="total-amount">
+                <h2>Cart</h2>
+                <hr>
+                <ul id="selected-place-container" class="selected-place-container">
+
+                </ul>
+                <hr>
+                <p style="font-weight: bolder; font-size: 1.5rem;">Total Cost: <span id="total-cost">0</span> $</p>
+                <div class="bonus-amount">
+                    <button onclick="grandTotalCost('bus')"
+                        style="background-color:chocolate;border-radius: .2rem; padding: .5rem;">Bus:+100</button>
+                    <button onclick="grandTotalCost('train')"
+                        style="background-color:chocolate;border-radius: .2rem; padding: .5rem;">Train:-200</button>
+                    <button onclick="grandTotalCost('flight')"
+                        style="background-color:chocolate;border-radius: .2rem; padding: .5rem;">Flight:+500</button>
+                </div>
+                <h2>Grand Total: <span id="grand-total">0</span> $</h2>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
